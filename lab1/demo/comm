@@ -1,0 +1,4 @@
+bison -d A1.y
+flex A1.l
+gcc lex.yy.c A1.tab.c -lfl -o A1
+./A1 < X.java > Y.java
